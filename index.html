@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="quotegen.css">
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+  </div>
+  <!-- An element/icon to open the sidenav -->
+  <span title="Menu" id="navmenuIcon" onclick="openNav()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-list"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+    </svg>
+  </span>
+    <h1>Welcome Home</h1>
+    <div class="quote-container" id="quote-container">
+        <div class="quote-text">
+            <i class="fas fa-quote-left"></i>
+            <span id="quote"></span>
+        </div>
+        <div class="quote-author">
+            <span id="author"></span>
+        </div>
+   
+    <div class="button-container">
+        <button class="twitter-button" id="twitter" title="tweet this">
+            <i class="fab fa-twitter"></i>
+        </button>
+        <button id="new-quote" onclick=newQuote()>New Quote</button>
+    </div>
+</div>
+    <!-- Script -->
+    <script src="quotescript.js"></script>
+</body>
+</html>
